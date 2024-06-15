@@ -40,11 +40,15 @@ const SearchResults = ({ query }: Props) => {
   const [loading, setLoading] = useState(false)
   const [hasError, setHasError] = useState(false)
 
+  // HACK: A hack to avoid flashing issue of <NoResult /> component
+  const [hasLoadedOnce, setHasLoadedOnce] = useState(false)
+
   const debouncedQuery = useDebounce(query, 500)
 
   useEffect(() => {
     const search = async () => {
       setLoading(true)
+      setHasLoadedOnce(true)
       const { result, error } = await fuzzySearch(debouncedQuery, data)
 
       setHasError(error)
@@ -69,8 +73,8 @@ const SearchResults = ({ query }: Props) => {
           <SearchResultItem {...game} key={game.title} />
         ))}
 
-        {/* FIXME: Fix the flash of <NoResult /> on first keypress */}
-        {!result.length && !loading && <NoResult />}
+        {/* HACK: if no results found and loading is false and has loaded the data at least once */}
+        {!result.length && !loading && hasLoadedOnce && <NoResult />}
       </div>
     </>
   )
