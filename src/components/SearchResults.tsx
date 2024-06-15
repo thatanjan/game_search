@@ -6,6 +6,7 @@ import data from '@/data.json'
 import NoResult from './NoResult'
 import { useEffect, useState } from 'react'
 import useDebounce from '@/hooks/useDebounce'
+import GameLogo from './GameLogo'
 
 interface Props {
   query: string
@@ -32,14 +33,7 @@ const SearchResults = ({ query }: Props) => {
         {results.map(({ title, release_year, logo, highlightedTitle = [] }) => (
           <Link key={title} href={`/game/${title}`}>
             <div className="flex gap-4 px-5 py-3 hover:bg-gray-500">
-              <Image
-                alt={title}
-                src={logo || ''}
-                width={200}
-                height={200}
-                loader={({ src }) => src}
-                className="w-5"
-              />
+              <GameLogo title={title} logo={logo} />
               <h2 className="grow truncate">
                 {highlightedTitle.map(({ text, matched }) => (
                   <span className={matched ? 'bg-gray-600' : ''} key={text}>
