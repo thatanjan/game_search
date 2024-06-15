@@ -6,6 +6,7 @@ import NoResult from './NoResult'
 import { useEffect, useState } from 'react'
 import useDebounce from '@/hooks/useDebounce'
 import GameLogo from './GameLogo'
+import Loader from './Loader'
 
 interface Props {
   query: string
@@ -35,17 +36,23 @@ const SearchResultItem = ({
 
 const SearchResults = ({ query }: Props) => {
   const [results, setResults] = useState<Game[]>([])
+  const [loading, setLoading] = useState(false)
 
   const debouncedQuery = useDebounce(query, 500)
 
   useEffect(() => {
     const search = async () => {
+      setLoading(true)
       const results = await fuzzySearch(debouncedQuery, data)
+      setLoading(false)
+
       setResults(results)
     }
 
     search()
   }, [debouncedQuery])
+
+  if (loading) return <Loader />
 
   return (
     <>
@@ -55,7 +62,7 @@ const SearchResults = ({ query }: Props) => {
           <SearchResultItem {...game} key={game.title} />
         ))}
 
-        {!results.length && <NoResult />}
+        {!results.length && debouncedQuery && <NoResult />}
       </div>
     </>
   )

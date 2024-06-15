@@ -3,7 +3,7 @@ import wait from './wait'
 
 const fuzzySearch = async (query: string, games: Game[]): Promise<Game[]> => {
   // Simulate a request to the server
-  await wait(200)
+  await wait(500)
 
   const lowerQuery = query.toLowerCase()
 
