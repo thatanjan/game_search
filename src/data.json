@@ -1,0 +1,345 @@
+[
+  {
+    "title": "The Witcher 3: Wild Hunt",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/0/0c/Witcher_3_cover_art.jpg",
+    "genre": "RPG",
+    "release_year": 2015,
+    "publisher": "CD Projekt"
+  },
+  {
+    "title": "Cyberpunk 2077",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/9/9f/Cyberpunk_2077_box_art.jpg",
+    "genre": "Action RPG",
+    "release_year": 2020,
+    "publisher": "CD Projekt"
+  },
+  {
+    "title": "Red Dead Redemption 2",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/4/44/Red_Dead_Redemption_II.jpg",
+    "genre": "Action-adventure",
+    "release_year": 2018,
+    "publisher": "Rockstar Games"
+  },
+  {
+    "title": "Grand Theft Auto V",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V.png",
+    "genre": "Action-adventure",
+    "release_year": 2013,
+    "publisher": "Rockstar Games"
+  },
+  {
+    "title": "Dark Souls III",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/b/b2/Dark_Souls_III_cover_art.jpg",
+    "genre": "Action RPG",
+    "release_year": 2016,
+    "publisher": "Bandai Namco Entertainment"
+  },
+  {
+    "title": "Doom Eternal",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/8/8f/Doom_Eternal.jpg",
+    "genre": "First-person shooter",
+    "release_year": 2020,
+    "publisher": "Bethesda Softworks"
+  },
+  {
+    "title": "Half-Life: Alyx",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/e/e7/Half-Life_Alyx_cover_art.jpg",
+    "genre": "First-person shooter",
+    "release_year": 2020,
+    "publisher": "Valve"
+  },
+  {
+    "title": "The Elder Scrolls V: Skyrim",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/1/15/The_Elder_Scrolls_V_Skyrim_cover_art.jpg",
+    "genre": "Action RPG",
+    "release_year": 2011,
+    "publisher": "Bethesda Softworks"
+  },
+  {
+    "title": "Hades",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/e/eb/Hades_cover_art.png",
+    "genre": "Roguelike",
+    "release_year": 2020,
+    "publisher": "Supergiant Games"
+  },
+  {
+    "title": "Among Us",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/9/9a/Among_Us_cover_art.png",
+    "genre": "Party",
+    "release_year": 2018,
+    "publisher": "Innersloth"
+  },
+  {
+    "title": "Minecraft",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png",
+    "genre": "Sandbox",
+    "release_year": 2011,
+    "publisher": "Mojang Studios"
+  },
+  {
+    "title": "Fortnite",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/0/09/Fortnite_Save_The_World.png",
+    "genre": "Battle Royale",
+    "release_year": 2017,
+    "publisher": "Epic Games"
+  },
+  {
+    "title": "Call of Duty: Warzone",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/2/20/Call_of_Duty_Warzone_cover_art.jpg",
+    "genre": "Battle Royale",
+    "release_year": 2020,
+    "publisher": "Activision"
+  },
+  {
+    "title": "Overwatch",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/5/51/Overwatch_cover_art.jpg",
+    "genre": "First-person shooter",
+    "release_year": 2016,
+    "publisher": "Blizzard Entertainment"
+  },
+  {
+    "title": "Apex Legends",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/9/9f/Apex_legends_cover.jpg",
+    "genre": "Battle Royale",
+    "release_year": 2019,
+    "publisher": "Electronic Arts"
+  },
+  {
+    "title": "The Sims 4",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/5/5e/The_Sims_4_box_art.png",
+    "genre": "Life simulation",
+    "release_year": 2014,
+    "publisher": "Electronic Arts"
+  },
+  {
+    "title": "Civilization VI",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/d/d6/Civilization_VI_cover_art.jpg",
+    "genre": "Strategy",
+    "release_year": 2016,
+    "publisher": "2K Games"
+  },
+  {
+    "title": "Stardew Valley",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/6/64/Stardew_Valley_cover_art.png",
+    "genre": "Simulation",
+    "release_year": 2016,
+    "publisher": "ConcernedApe"
+  },
+  {
+    "title": "Terraria",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/4/4e/Terraria_cover.jpg",
+    "genre": "Action-adventure",
+    "release_year": 2011,
+    "publisher": "Re-Logic"
+  },
+  {
+    "title": "Fall Guys",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/a/aa/Fall_Guys_cover.jpg",
+    "genre": "Battle Royale",
+    "release_year": 2020,
+    "publisher": "Devolver Digital"
+  },
+  {
+    "title": "Portal 2",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/f/f9/Portal2cover.jpg",
+    "genre": "Puzzle-platform",
+    "release_year": 2011,
+    "publisher": "Valve"
+  },
+  {
+    "title": "BioShock Infinite",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/0/00/Official_cover_art_for_Bioshock_Infinite.jpg",
+    "genre": "First-person shooter",
+    "release_year": 2013,
+    "publisher": "2K Games"
+  },
+  {
+    "title": "Dishonored 2",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/3/32/Dishonored_2_cover_art.jpg",
+    "genre": "Action-adventure",
+    "release_year": 2016,
+    "publisher": "Bethesda Softworks"
+  },
+  {
+    "title": "Sekiro: Shadows Die Twice",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/c/c7/Sekiro_shadows_die_twice_capa.png",
+    "genre": "Action-adventure",
+    "release_year": 2019,
+    "publisher": "Activision"
+  },
+  {
+    "title": "Control",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/9/95/Control_cover_art.jpg",
+    "genre": "Action-adventure",
+    "release_year": 2019,
+    "publisher": "505 Games"
+  },
+  {
+    "title": "Hollow Knight",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/d/d2/Hollow_Knight_cover.jpg",
+    "genre": "Metroidvania",
+    "release_year": 2017,
+    "publisher": "Team Cherry"
+  },
+  {
+    "title": "Celeste",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/c/c4/Celeste_box_art_final.png",
+    "genre": "Platform",
+    "release_year": 2018,
+    "publisher": "Matt Makes Games"
+  },
+  {
+    "title": "Monster Hunter: World",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/6/68/Monster_Hunter_World_cover_art.jpg",
+    "genre": "Action RPG",
+    "release_year": 2018,
+    "publisher": "Capcom"
+  },
+  {
+    "title": "Resident Evil 2",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/1/13/Resident_Evil_2_Remake.jpg",
+    "genre": "Survival horror",
+    "release_year": 2019,
+    "publisher": "Capcom"
+  },
+  {
+    "title": "Persona 4 Golden",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/8/85/Persona_4_The_Golden.png",
+    "genre": "RPG",
+    "release_year": 2012,
+    "publisher": "Atlus"
+  },
+  {
+    "title": "Yakuza 0",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/7/72/Yakuza0BoxArt.png",
+    "genre": "Action-adventure",
+    "release_year": 2015,
+    "publisher": "Sega"
+  },
+  {
+    "title": "Nier: Automata",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/0/06/Nier_Automata_cover_art.jpg",
+    "genre": "Action RPG",
+    "release_year": 2017,
+    "publisher": "Square Enix"
+  },
+  {
+    "title": "The Legend of Zelda: Breath of the Wild",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/0/0a/The_Legend_of_Zelda_Breath_of_the_Wild.jpg",
+    "genre": "Action-adventure",
+    "release_year": 2017,
+    "publisher": "Nintendo"
+  },
+  {
+    "title": "Super Mario Odyssey",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/8/8d/Super_Mario_Odyssey.jpg",
+    "genre": "Platform",
+    "release_year": 2017,
+    "publisher": "Nintendo"
+  },
+  {
+    "title": "Horizon Zero Dawn",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/6/60/Horizon_Zero_Dawn.jpg",
+    "genre": "Action RPG",
+    "release_year": 2017,
+    "publisher": "Sony Interactive Entertainment"
+  },
+  {
+    "title": "God of War",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/a/a7/God_of_War_4_cover.jpg",
+    "genre": "Action-adventure",
+    "release_year": 2018,
+    "publisher": "Sony Interactive Entertainment"
+  },
+  {
+    "title": "Marvel's Spider-Man",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/0/0a/Spider-Man_PS4_cover.jpg",
+    "genre": "Action-adventure",
+    "release_year": 2018,
+    "publisher": "Sony Interactive Entertainment"
+  },
+  {
+    "title": "Death Stranding",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/8/89/Death_Stranding.jpg",
+    "genre": "Action",
+    "release_year": 2019,
+    "publisher": "Sony Interactive Entertainment"
+  },
+  {
+    "title": "Ghost of Tsushima",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/9/9e/Ghost_of_Tsushima.jpg",
+    "genre": "Action-adventure",
+    "release_year": 2020,
+    "publisher": "Sony Interactive Entertainment"
+  },
+  {
+    "title": "Final Fantasy VII Remake",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/a/a9/Final_Fantasy_VII_Remake_cover_art.jpg",
+    "genre": "Action RPG",
+    "release_year": 2020,
+    "publisher": "Square Enix"
+  },
+  {
+    "title": "Dragon Age: Inquisition",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/a/aa/Dragon_Age_Inquisition_BoxArt.jpg",
+    "genre": "Action RPG",
+    "release_year": 2014,
+    "publisher": "Electronic Arts"
+  },
+  {
+    "title": "Mass Effect 2",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/8/80/Mass_Effect_2_cover.PNG",
+    "genre": "Action RPG",
+    "release_year": 2010,
+    "publisher": "Electronic Arts"
+  },
+  {
+    "title": "Assassin's Creed Valhalla",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/a/a6/Assassin%27s_Creed_Valhalla_cover_art.jpg",
+    "genre": "Action RPG",
+    "release_year": 2020,
+    "publisher": "Ubisoft"
+  },
+  {
+    "title": "Far Cry 5",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/9/9f/Far_Cry_5_boxshot.jpg",
+    "genre": "First-person shooter",
+    "release_year": 2018,
+    "publisher": "Ubisoft"
+  },
+  {
+    "title": "The Division 2",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/7/79/Division_2_art.jpg",
+    "genre": "Action RPG",
+    "release_year": 2019,
+    "publisher": "Ubisoft"
+  },
+  {
+    "title": "Rainbow Six Siege",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/6/6c/Rainbow_Six_Siege_cover_art.jpg",
+    "genre": "First-person shooter",
+    "release_year": 2015,
+    "publisher": "Ubisoft"
+  },
+  {
+    "title": "Valorant",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/f/f5/Valorant_cover_art.jpg",
+    "genre": "First-person shooter",
+    "release_year": 2020,
+    "publisher": "Riot Games"
+  },
+  {
+    "title": "League of Legends",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/7/77/League_of_Legends_logo.png",
+    "genre": "MOBA",
+    "release_year": 2009,
+    "publisher": "Riot Games"
+  },
+  {
+    "title": "Dota 2",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/6/66/Dota_2_Steam_artwork.jpg",
+    "genre": "MOBA",
+    "release_year": 2013,
+    "publisher": "Valve"
+  }
+]
