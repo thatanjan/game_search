@@ -4,13 +4,24 @@ import Image from 'next/image'
 import fuzzySearch from '@/utils/search'
 import data from '@/data.json'
 import NoResult from './NoResult'
+import { useEffect, useState } from 'react'
 
 interface Props {
   query: string
 }
 
 const SearchResults = ({ query }: Props) => {
-  const results = fuzzySearch(query, data)
+  const [results, setResults] = useState<Game[]>([])
+  // const results = fuzzySearch(query, data)
+
+  useEffect(() => {
+    const search = async () => {
+      const results = await fuzzySearch(query, data)
+      setResults(results)
+    }
+
+    search()
+  }, [query])
 
   return (
     <>

@@ -1,6 +1,10 @@
 import { Game } from '@/types/games'
+import wait from './wait'
 
-const fuzzySearch = (query: string, games: Game[]): Game[] => {
+const fuzzySearch = async (query: string, games: Game[]): Promise<Game[]> => {
+  // Simulate a request to the server
+  await wait(200)
+
   const lowerQuery = query.toLowerCase()
 
   return games
