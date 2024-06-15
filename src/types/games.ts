@@ -4,7 +4,10 @@ interface Game {
   genre: string
   release_year: number
   publisher: string
-  highlightedTitle?: string // New field to include the highlighted title
+  highlightedTitle?: {
+    text: string
+    matched: boolean
+  }[]
 }
 
 export type { Game }

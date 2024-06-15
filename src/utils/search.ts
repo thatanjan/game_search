@@ -12,12 +12,12 @@ const fuzzySearch = (query: string, games: Game[]): Game[] => {
 
       if (startIndex !== -1) {
         const endIndex = startIndex + query.length
-        const highlightedTitle =
-          title.slice(0, startIndex) +
-          '<mark>' +
-          title.slice(startIndex, endIndex) +
-          '</mark>' +
-          title.slice(endIndex)
+
+        const highlightedTitle = [
+          { text: title.slice(0, startIndex), matched: false },
+          { text: title.slice(startIndex, endIndex), matched: true },
+          { text: title.slice(endIndex), matched: false },
+        ]
 
         return { ...game, highlightedTitle }
       }
