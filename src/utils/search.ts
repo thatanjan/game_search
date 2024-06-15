@@ -1,11 +1,4 @@
-interface Game {
-  title: string
-  logo: string
-  genre: string
-  release_year: number
-  publisher: string
-  highlightedTitle?: string // New field to include the highlighted title
-}
+import { Game } from '@/types/games'
 
 const fuzzySearch = (query: string, games: Game[]): Game[] => {
   const lowerQuery = query.toLowerCase()
