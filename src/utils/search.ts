@@ -1,33 +1,45 @@
 import { Game } from '@/types/games'
 import wait from './wait'
 
-const fuzzySearch = async (query: string, games: Game[]): Promise<Game[]> => {
-  // Simulate a request to the server
-  await wait(500)
+const fuzzySearch = async (query: string, games: Game[]) => {
+  try {
+    // Simulate a request to the server
+    await wait(500)
 
-  const lowerQuery = query.toLowerCase()
+    const lowerQuery = query.toLowerCase()
 
-  return games
-    .filter((game) => game.title.toLowerCase().includes(lowerQuery))
-    .map((game) => {
-      const title = game.title
-      const lowerTitle = title.toLowerCase()
-      const startIndex = lowerTitle.indexOf(lowerQuery)
+    const result = games
+      .filter((game) => game.title.toLowerCase().includes(lowerQuery))
+      .map((game) => {
+        const title = game.title
+        const lowerTitle = title.toLowerCase()
+        const startIndex = lowerTitle.indexOf(lowerQuery)
 
-      if (startIndex !== -1) {
-        const endIndex = startIndex + query.length
+        if (startIndex !== -1) {
+          const endIndex = startIndex + query.length
 
-        const highlightedTitle = [
-          { text: title.slice(0, startIndex), matched: false },
-          { text: title.slice(startIndex, endIndex), matched: true },
-          { text: title.slice(endIndex), matched: false },
-        ]
+          const highlightedTitle = [
+            { text: title.slice(0, startIndex), matched: false },
+            { text: title.slice(startIndex, endIndex), matched: true },
+            { text: title.slice(endIndex), matched: false },
+          ]
 
-        return { ...game, highlightedTitle }
-      }
+          return { ...game, highlightedTitle }
+        }
 
-      return game
-    })
+        return game
+      })
+
+    return {
+      error: false,
+      result,
+    }
+  } catch (error) {
+    return {
+      result: [],
+      error: true,
+    }
+  }
 }
 
 export default fuzzySearch

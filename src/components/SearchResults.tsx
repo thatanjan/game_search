@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react'
 import useDebounce from '@/hooks/useDebounce'
 import GameLogo from './GameLogo'
 import Loader from './Loader'
+import ErrorOnSearch from './ErrorOnSearch'
 
 interface Props {
   query: string
@@ -35,35 +36,39 @@ const SearchResultItem = ({
 )
 
 const SearchResults = ({ query }: Props) => {
-  const [results, setResults] = useState<Game[]>([])
+  const [result, setResult] = useState<Game[]>([])
   const [loading, setLoading] = useState(false)
+  const [hasError, setHasError] = useState(false)
 
   const debouncedQuery = useDebounce(query, 500)
 
   useEffect(() => {
     const search = async () => {
       setLoading(true)
-      const results = await fuzzySearch(debouncedQuery, data)
-      setLoading(false)
+      const { result, error } = await fuzzySearch(debouncedQuery, data)
 
-      setResults(results)
+      setHasError(error)
+      setLoading(false)
+      setResult(result)
     }
 
     search()
   }, [debouncedQuery])
 
+  if (hasError) return <ErrorOnSearch />
+
   // Show loader when loading and no results are available
-  if (loading && !results.length) return <Loader />
+  if (loading && !result.length) return <Loader />
 
   return (
     <>
-      {!!results.length && <hr className="bg-gray-200" />}
+      {!!result.length && <hr className="bg-gray-200" />}
       <div className="max-h-[370px] overflow-y-auto">
-        {results.map((game) => (
+        {result.map((game) => (
           <SearchResultItem {...game} key={game.title} />
         ))}
 
-        {!results.length && !loading && <NoResult />}
+        {!result.length && !loading && <NoResult />}
       </div>
     </>
   )
