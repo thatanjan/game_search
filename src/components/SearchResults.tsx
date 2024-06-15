@@ -5,6 +5,7 @@ import fuzzySearch from '@/utils/search'
 import data from '@/data.json'
 import NoResult from './NoResult'
 import { useEffect, useState } from 'react'
+import useDebounce from '@/hooks/useDebounce'
 
 interface Props {
   query: string
@@ -12,16 +13,17 @@ interface Props {
 
 const SearchResults = ({ query }: Props) => {
   const [results, setResults] = useState<Game[]>([])
-  // const results = fuzzySearch(query, data)
+
+  const debouncedQuery = useDebounce(query, 500)
 
   useEffect(() => {
     const search = async () => {
-      const results = await fuzzySearch(query, data)
+      const results = await fuzzySearch(debouncedQuery, data)
       setResults(results)
     }
 
     search()
-  }, [query])
+  }, [debouncedQuery])
 
   return (
     <>
