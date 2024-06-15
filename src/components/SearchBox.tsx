@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 
 import ClearIcon from './icons/ClearIcon'
 import SearchIcon from './icons/SearchIcon'
+import SearchResults from './SearchResults'
 
 type Props = {}
 
@@ -38,6 +39,7 @@ const SearchBox = (props: Props) => {
           </button>
         )}
       </div>
+      {!!query && <SearchResults query={query} />}
     </div>
   )
 }
