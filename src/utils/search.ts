@@ -15,9 +15,11 @@ const fuzzySearch = async (query: string, games: Game[]) => {
         const lowerTitle = title.toLowerCase()
         const startIndex = lowerTitle.indexOf(lowerQuery)
 
+        // If the query is found in the title
         if (startIndex !== -1) {
           const endIndex = startIndex + query.length
 
+          // Highlight the matched part of the title
           const highlightedTitle = [
             { text: title.slice(0, startIndex), matched: false },
             { text: title.slice(startIndex, endIndex), matched: true },

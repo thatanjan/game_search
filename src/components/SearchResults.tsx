@@ -63,11 +63,13 @@ const SearchResults = ({ query }: Props) => {
   return (
     <>
       {!!result.length && <hr className="bg-gray-200" />}
+
       <div className="max-h-[370px] overflow-y-auto">
         {result.map((game) => (
           <SearchResultItem {...game} key={game.title} />
         ))}
 
+        {/* FIXME: Fix the flash of <NoResult /> on first keypress */}
         {!result.length && !loading && <NoResult />}
       </div>
     </>

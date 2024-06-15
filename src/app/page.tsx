@@ -1,10 +1,6 @@
 import SearchBox from '@/components/SearchBox'
-import fuzzySearch from '@/utils/search'
-
-import data from '../data.json'
 
 const Home = () => {
-  console.log(fuzzySearch('the', data))
   return (
     <main>
       <div className="mx-auto max-w-[800px] px-5">

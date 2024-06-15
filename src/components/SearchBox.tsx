@@ -5,9 +5,7 @@ import ClearIcon from './icons/ClearIcon'
 import SearchIcon from './icons/SearchIcon'
 import SearchResults from './SearchResults'
 
-type Props = {}
-
-const SearchBox = (props: Props) => {
+const SearchBox = () => {
   const [query, setQuery] = useState('')
 
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
