@@ -1,3 +1,5 @@
+import SearchBox from '@/components/SearchBox'
+
 const Home = () => {
   return (
     <main>
@@ -6,7 +8,7 @@ const Home = () => {
           Game Search
         </h1>
       </div>
-      h
+      <SearchBox />
     </main>
   )
 }
