@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import fuzzySearch from '@/utils/search'
 import data from '@/data.json'
+import NoResult from './NoResult'
 
 interface Props {
   query: string
@@ -38,6 +39,8 @@ const SearchResults = ({ query }: Props) => {
           </div>
         </Link>
       ))}
+
+      {!results.length && <NoResult />}
     </div>
   )
 }
