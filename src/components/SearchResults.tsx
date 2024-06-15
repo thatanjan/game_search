@@ -52,7 +52,8 @@ const SearchResults = ({ query }: Props) => {
     search()
   }, [debouncedQuery])
 
-  if (loading) return <Loader />
+  // Show loader when loading and no results are available
+  if (loading && !results.length) return <Loader />
 
   return (
     <>
@@ -62,7 +63,7 @@ const SearchResults = ({ query }: Props) => {
           <SearchResultItem {...game} key={game.title} />
         ))}
 
-        {!results.length && debouncedQuery && <NoResult />}
+        {!results.length && !loading && <NoResult />}
       </div>
     </>
   )
